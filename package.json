@@ -1,0 +1,26 @@
+{
+  "name": "new-release-fe-taurant",
+  "version": "1.0.0",
+  "description": "신상출시 FE토랑",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wally-wally/new-release-fe-taurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wally-wally/new-release-fe-taurant/issues"
+  },
+  "homepage": "https://github.com/wally-wally/new-release-fe-taurant#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.8",
+    "babel-jest": "^27.4.6",
+    "jest": "^26.6.3",
+    "jest-plugin-context": "^2.9.0",
+    "string.prototype.replaceall": "^1.0.6"
+  }
+}
