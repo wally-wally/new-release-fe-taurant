@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "신상출시 FE토랑",
   "scripts": {
-    "test": "jest --watchAll --verbose --coverage"
+    "test:all": "jest --watchAll --verbose --coverage",
+    "test:01": "jest --watchAll --verbose --coverage season01/test"
   },
   "repository": {
     "type": "git",
