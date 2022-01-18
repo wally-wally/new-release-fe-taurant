@@ -11,6 +11,7 @@ export function question(value, maxDecimalLength) {
     const reformatDecimal = decimal || '';
     
     // TODO: 소수점 이하 영역을 구성하는 나머지 부분을 완성해주세요.(필수)
+    return `.${reformatDecimal.slice(0, maxDecimalLength).padEnd(maxDecimalLength, '0')}`;
   }
 
   // maxDecimalLength가 0인 경우 소수점을 표시할 필요가 없으므로 소수 영역은 빈 문자열로 설정합니다.
@@ -20,3 +21,13 @@ export function question(value, maxDecimalLength) {
 }
 
 // TODO: 추가 내용에 나와 있는대로 본인이 새롭게 만든 question 함수를 아래에 작성해주세요. (선택사항)
+
+export function question2(value, maxDecimalLength) {
+  const [naturalNumber, decimalNumber = ''] = value.split('.');
+  
+  const decimalPart  = decimalNumber.slice(0, maxDecimalLength).padEnd(maxDecimalLength, '0');
+
+  return decimalPart ? `${naturalNumber}.${decimalPart}` : naturalNumber;
+}
+
+// 흠 하다보니 이거 밖에 생각 안나네;
