@@ -11,6 +11,11 @@ export function question(value, maxDecimalLength) {
     const reformatDecimal = decimal || '';
     
     // TODO: 소수점 이하 영역을 구성하는 나머지 부분을 완성해주세요.(필수)
+    if (reformatDecimal.length > maxDecimalLength) {
+      return `.${reformatDecimal.slice(0, maxDecimalLength)}`;
+    }
+
+    return `.${reformatDecimal.padEnd(maxDecimalLength, '0')}`;
   }
 
   // maxDecimalLength가 0인 경우 소수점을 표시할 필요가 없으므로 소수 영역은 빈 문자열로 설정합니다.
